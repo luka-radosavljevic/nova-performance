@@ -1,9 +1,13 @@
+/*Reset CSS*/
 *{    box-sizing: border-box;
 }
 
 
 /*Body-Bereich*/
-
+.layout{
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
 body{background-color: #f5f6fa;
     margin: 0;
 }
@@ -17,27 +21,22 @@ body{background-color: #f5f6fa;
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-}
+    align-items: center;}
 
 .logo{
 
     font-family: Inter, sans-serif;
     color: white;
     font-size: 20px;
-    margin: 165px;
-}
+    margin: 165px;}
 
 .logo-link{
     text-decoration: none;
-    color: white;
-}
+    color: white;}
 
 .logo-link:hover{
   cursor: pointer;
-    transform: translateY(-3px);
-}
+    transform: translateY(-3px);}
 
 
 
@@ -49,8 +48,7 @@ body{background-color: #f5f6fa;
 text-decoration: none;
 align-items: center;
     position: relative;
-    list-style: none;
-}
+    list-style: none;}
 
 
 
@@ -61,33 +59,23 @@ align-items: center;
     font-size: 16px;
     font-weight: Bold;
     display: inline-block;
-    transition: transform 0.7s ease-in-out;
-}
+    transition: transform 0.5s ease-in-out;}
 
     
-
-
 #nav-item:hover{
-    transform: ease-in-out 0.3s;
+  
     transition: 0.3s ;
-    transform: translateX(-3px);
-}   
+    transform: translatex(-6px);}   
 
 #nav-item:active{
-    color: #2f3640;
-  
-
-    padding: 10px 5px;
-}
+    color: #2f3640;}
 
 
 
 
+/* Bereich: Hero Section */
 
-
-
-/*Section-Bereich-Hero-Content*/
-
+    /* Used fonts */
 @font-face {
     font-family: "Inter";
     src: url("assets/Inter_18pt-Bold.ttf") format("ttf");
@@ -102,8 +90,9 @@ align-items: center;
     font-style: normal;}
 
 
+
 .hero-content{
-    margin: 20px    50px;
+    margin: 20px   50px;
 }
 
 .hero {
@@ -138,29 +127,30 @@ align-items: center;
     width: 100%;
     height: 520px;
     object-fit: cover;
-    display: block;
-}
+    display: block; 
+    transition: transform 0.8s ease;
+    border-radius: 8px;}
 
 
+.hero-image:hover{
+    transform: scale(1.06);}
 
 
 .hero-image-wrapper{
  width: 486px;
-    flex-shrink: 0;}
+flex-shrink: 0;}
 
 
 /*CTA BUTTON*/ 
-
 .cta-btn-container{width: 200px;
     height: 50px;
     display: flex;
     justify-content: left;
-    margin-top: 20px;
-}
+    margin-top: 20px;}
 
 .cta-btn{
 background-color: #0A0A0A;
- border-radius: 5px;
+border-radius: 8px;
 color: white;
 font-family: "Inter", sans-serif;
 font-size: 14px;   
@@ -173,6 +163,7 @@ transition: transform 0.3s ease,
 
 }
 
+/*Bewegung beim Hovern*/ 
 .cta-btn:hover{
     background-color: black;
     transition: 0.3s;
@@ -181,3 +172,114 @@ transition: transform 0.3s ease,
     transform: translateY(-5px);
 
 }
+
+
+
+
+/*Section: 02--Leistunge */ 
+
+.leistungen-content{ height: 600px;
+    margin-top: 150px;
+   
+}
+
+
+
+
+
+
+/*Boxen*/
+
+
+.leistungen-grid{
+
+   
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+
+/*Box 1*/
+.leistungen-item1 {
+    background-color: #2f3542;
+    border-radius: 8px;
+    border: 3px solid white;
+    opacity: 0.1;
+    height: 300px;
+    width: 300px;
+    transition: opacity 0.8s ease-in-out;}
+
+.leistungen-item1:hover {
+    opacity: 1;}
+
+
+
+/*Box 2*/
+.leistungen-item2 {
+    background-color: #2f3542;
+    border-radius: 8px;
+    border: 3px solid white;
+    opacity: 0.1;
+    height: 300px;
+    width: 300px;
+    transition: opacity 0.8s ease-in-out;}
+
+.leistungen-item2:hover {
+    opacity: 1;}
+
+
+
+/*Box 3*/
+.leistungen-item3 {
+    background-color: #2f3542;
+    border-radius: 8px;
+    border: 3px solid white;
+    opacity: 0.1;
+    height: 300px;
+    width: 300px;
+    transition: opacity 0.8s ease-in-out;}
+
+.leistungen-item3:hover {
+    opacity: 1;}
+
+
+    /*Inside-TEXT BOX1/2/3*/
+
+
+    .leistungen-item-number{
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;}
+
+
+
+    .leistungen-item-title{
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin: 0;
+  
+    padding-left: 10px;
+    }
+
+    .leistungen-item-text{
+    font-family: "Inter", sans-serif;
+    font-weight: regular;
+    color: #ffffff;
+    font-size: 16px;   
+    padding: 10px;    
+    text-align: left;
+    line-height: 1.5;
+    }
+
+
+
+
+    

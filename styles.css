@@ -2116,3 +2116,11 @@ border-radius: 10px 10px 0px 0px;
     }
 
 }
+
+.portfolio-hinweis {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: #b8bec4;
+    line-height: 1.6;
+    max-width: 550px;
+}

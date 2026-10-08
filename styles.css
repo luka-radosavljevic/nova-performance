@@ -1,184 +1,356 @@
 /*Reset CSS*/
+
 *{    box-sizing: border-box;
+
 }
+
+
+
 
 
 /*Body-Bereich*/
+
 .layout{
+
     width: min(1200px, calc(100% - 48px));
+
     margin: 0 auto;
+
 }
+
 body{background-color: #fff;
+
     margin: 0;
+
     padding-top: 80px;
+
 }
+
+
 
 html{scroll-behavior: smooth;}
 
 
 
+
+
+
+
 :root{
+
     --primary-font-size: 1.2rem;
+
     --header-font-color: #2f3640;
+
     --text-font-color: #2f3640;
 
+
+
 }
+
+
 
 /*highlight-classes*/ 
 
+
+
 .highlight-bold{
-    font-weight: bolder;
+
+    font-weight: bold;
+
 }
+
+
+
 
 
 .underline{
+
     text-decoration: underline;
+
 }
 
 
 
 
-/*Navigation-Bereich */ 
 
-.navbar{
+
+
+
+
+/* Navigation-Bereich – responsive */
+.navbar {
     width: 100%;
-    height: 60px;
-    background: linear-gradient(45deg, #252422,  #fafaff 900%);
-    padding: 20px 20px;
+    height: 80px;
+    background-color: #242D38;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 1000;
-box-shadow: 2px 1px 5px #787878;
+    box-shadow: 2px 1px 5px #787878;
 }
 
-.logo{
-
-    font-family: Inter, sans-serif;
-    color: white;
+.logo {
+    font-family: "Inter", sans-serif;
     font-size: 20px;
-    margin: 165px;}
+    margin: 0;
+}
 
-.logo-link{
+.logo-link {
+    display: inline-block;
     text-decoration: none;
-    color: white;}
+    color: #ffffff;
+}
 
-.logo-link:hover{
-  cursor: pointer;
-    transform: translateY(-3px);}
-
-
-
-
-.nav-links{
+.nav-links {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 40px;
-text-decoration: none;
-align-items: center;
-    position: relative;
-    list-style: none;}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-
-
-#nav-item{
+.nav-item {
+    display: inline-block;
     color: #ffffff;
     text-decoration: none;
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-    font-weight: Bold;
-    display: inline-block;
-    transition: transform 0.2s ease-in-out;}
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease-in-out;
+}
 
-    
-#nav-item:hover{
-  
-    transition: 0.3s ;
-    transform: translatex(-6px);}   
+.nav-item:hover { transform: translateX(-6px); }
 
-#nav-item:active{
-    color: #2f3640;}
+.cta-kontakt { list-style: none; }
 
+#kontakt-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    background-color: rgba(184, 190, 196, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+#kontakt-link:hover { background-color: rgba(184, 190, 196, 0.5); }
+#kontakt-link:active { transform: scale(0.96); }
+
+/* Hamburger – auf Desktop ausgeblendet */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.menu-toggle:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .navbar { height: 70px; padding: 0 20px; }
+    .logo { font-size: 17px; }
+    .menu-toggle { display: flex; }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        padding: 25px 20px;
+        background-color: #242D38;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links.active { display: flex; }
+    .nav-item { display: block; }
+    #kontakt-link { width: 100%; }
+    body { padding-top: 70px; }
+}
 
 
 /* Bereich: Hero Section */
 
+
+
     /* Used fonts */
+
 @font-face {
+
     font-family: "Inter";
+
     src: url("assets/Inter_18pt-Bold.ttf") format("ttf");
+
     font-weight: bold;
+
     font-style: normal;}
+
+
+
 
 
 @font-face {
+
     font-family: "Inter";
+
     src: url("assets/Inter_18pt-Medium.ttf") format("ttf");
+
     font-weight: medium;
+
     font-style: normal;}
+
+
+
+
 
 
 
 .hero-content{
+
     width: 1200px;
+
     max-height: 1000px;
+
         display: flex;
+
      flex-direction: row;
+
 border: 1px solid black;
+
   overflow: hidden;
+
   ;
 
 
+
+
+
 }
+
+
 
 .hero {
+
      padding-top: 40px;
+
     max-width: 1200px;
+
 }
 
+
+
 .subtitle{
+
     font-family: "Inter", sans-serif;
+
     color: #2f3640;
+
     font-size: 1.3rem;
+
     font-weight: bold;
-    margin: 0;
+
+    margin-bottom: 10px;
+
 }
+
+
+
 
 
 .hero-title{
+
     font-family: "Inter", sans-serif;
+
     color: #2f3640;
+
     font-size: 3rem;
+
     line-height: 1.3;
+
     font-weight: bold;
+
     margin: 0px;
-   
-    
+
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
 
 
 .hero-text{
+
     font-family: "Inter", sans-serif;
+
     font-size: var(--primary-font-size);
+
     color: var(--text-font-color);
+
     line-height: 1.5;
+
 }
 
 
 
+
+
+
+
 .hero-image{
+
     width: 100%;
+
     height: 520px;
+
     object-fit: cover;
+
     transition: transform 0.8s ease;
+
     border-radius: 8px;
+
+    transition: 2s;
+
+
+
 object-position: 60% 30%;}
 
 
@@ -186,20 +358,47 @@ object-position: 60% 30%;}
 
 
 
+
+
+
+
+
+
+
 /*Erstgespräch */ 
+
 .erstgespräch-head{
+
     font-family: "Inter", sans-serif;
+
     font-weight: bold ;
+
 color: var(--header-font-color);}
 
 
+
+
+
 .erstgespräch-text{
+
     font-family: "Inter", sans-serif; 
+
     font-size: var(--primary-font-size);
+
     opacity: 0.9;
+
     line-height: 1.5;
 
+
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -207,168 +406,335 @@ color: var(--header-font-color);}
 
 
 /*CTA BUTTON*/ 
+
 .cta-btn-container{width: 500px;
+
     height: 100px;
+
     display: flex;
+
     justify-content: left;
+
     margin-top: 20px;
+
 margin-bottom: 0;}
 
+
+
 .cta-btn{
+
     width: 400px;
+
     height: 70px;
+
 background-color: #0A0A0A;
+
 border-radius: 40px;
+
 color: white;
+
 font-family: "Inter", sans-serif;
+
 font-size: 1.5rem;   
+
 font-weight: 600;
+
 outline: none;
+
 border: none;
+
 transition: transform 0.3s ease;
 
+
+
 }
+
+
 
 /*Bewegung beim Hovern*/ 
+
 .cta-btn:hover{
+
     background-color: black;
+
     transition: 0.3s;
+
     cursor: pointer;
+
     transform: scale(0.98);
+
 }
+
+
 
 .cta-btn:active{
+
     transition: 0.12ms;
+
 opacity: 0.85;
+
 }
 
 
 
 
-#leistungen
+
+
+
+
+
+\#leistungen
+
+
 
 /*Section: 02--Leistunge */ 
 
+
+
 .leistungen-content{ height: 600px;
+
     margin-top: 150px;
-   
+
+
+
 }
+
+
 
 .hero-title-leistungen{
+
 font-family: "Inter", sans-serif;
+
     color: #2f3640;
+
     font-size: 3rem;
+
     line-height: 1.3;
+
     font-weight: bold;
+
     margin-bottom:40px;
 
+
+
 }
+
+
+
+
 
 
 
 /*Boxen*/
 
 
+
+
+
 .leistungen-grid{
 
-   
+
+
+
+
     height: 300px;
+
     display: flex;
+
     justify-content: space-between;
+
     gap: 20px;
+
 }
+
+
 
 @media (max-width: 900px) {
+
     .leistungen-container {
+
         grid-template-columns: repeat(2, minmax(0, 1fr));
+
     }
+
 }
 
+
+
 @media (max-width: 600px) {
+
     .leistungen-container {
+
         grid-template-columns: 1fr;
+
     }
+
 }
+
+
+
 
 
 .leistungen-item {
+
     display: flex;
+
     flex-direction: column;
+
     width: 300px;
 
+
+
     background-color: #f6f6f6;
+
     border-radius: 12px;
+
     overflow: hidden;
 
+
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
     transition: transform 0.3s ease;
+
 }
+
+
+
 
 
 .leistungen-item:hover{
+
  transform: scale(1.10);
 
+
+
 }
+
+
 
 .leistungen-content {
+
     padding: 24px;
+
 }
+
+
 
 .img-plan {
+
     display: block;
+
     width: 100%;
+
     height: 180px;
+
     object-fit: cover;
+
     object-position: 70% 500%;
+
 }
+
+
 
 .img-performance {
+
     display: block;
+
     width: 100%;
+
     height: 100px;
+
     object-fit: cover;
+
     object-position: 10% 55%;
+
 }
 
+
+
 .img-coaching {
+
     display: block;
+
     width: 100%;
+
     height: 150px;
+
     object-fit: cover;
+
     object-position: 10% 50%;
+
 }
+
+
+
+
 
 
 
     /*Inside-TEXT BOX*/
 
 
+
+
+
     .leistungen-item-number{
+
     font-family: "Inter", sans-serif;
+
 color: #2f3640;    
+
 font-size: 14px;
+
     font-weight: bold;
+
     padding: 10px;}
 
 
 
+
+
+
+
     .leistungen-item-title{
+
     font-family: "Inter", sans-serif;
+
 color: var(--header-font-color);    
+
 font-size: var(--primary-font-size);
+
     margin: 0;
+
     padding-left: 10px;
+
     }
 
+
+
     .leistungen-item-text{
+
     font-family: "Inter", sans-serif;
+
     font-weight: regular;
+
 color: #2f3640;    
+
 font-size: 16px;   
+
     padding: 10px;    
+
     text-align: left;
+
     line-height: 1.8;
+
     }
+
+
+
+
+
 
 
 
@@ -379,107 +745,1374 @@ font-size: 16px;
 
 
 
-#ergebnisse {
+
+
+
+
+
+
+\#ergebnisse {
+
     padding: 80px 0;
+
+
+
 }
+
+
+
+
 
 
 
 /*PERSON 1 */ 
 
 
+
+
+
 .ergebnis_content{
+
 background-color: #f6f6f6;
+
 border-radius: 40px;
+
 display: flex;
+
 align-items: center;
+
 flex-direction: row;
-padding: 30px;
+
+padding: 10px;
+
 gap: 40px; 
-margin-bottom: 40px;
+
+margin-bottom: 10px;
+
 }
+
+
+
 
 
 .ergebnis_bild_container {
+
     display: flex;
+
     flex: 1;
+
     justify-content: flex-end;
 
+
+
 }
+
+
+
 
 
 .trainer1 {
+
     width: 100%;
-    max-width: none;
+
     height: 500px;
+
     object-fit: cover;
+
     border-radius: 30px;
+
 }
+
+
+
+
+
 
 
 
 
 .trainer3 {
+
     width: 100%;
+
     max-width: none;
+
     height: 500px;
+
     object-fit: cover;
+
     border-radius: 30px;
+
     object-position: 20% 20%;
+
 }
+
+
+
 
 
 .profil-text-container{
+
  display: flex;
+
     flex-direction: column;
+
     flex: 1;
+
 }
+
+
+
+
+
+
 
 
 
 
 
 .trainer-header {
+
     font-family: "Inter", sans-serif;
+
     font-size: 3rem;
+
     color: var(--header-font-color);
+
     margin: 0;
+
     font-weight: lighter;
+
     text-align: center;
+
     padding-bottom: 10px;
 
+
+
 }
+
+
+
+
 
 
 
 .trainer-text{
 
 
+
+
+
     font-family: "Inter", sans-serif;
+
     color: var(--text-font-color);
+
     font-size: var(--primary-font-size); 
+
     line-height: 1.5;
+
 text-align: center;
+
     font-weight: lighter;
 
 
+
+
+
 }
+
+
 
 .trainer-sub-head{
+
     font-family: "Inter", sans-serif;
+
     font-weight: 200;
+
     font-size: var(--primary-font-size);
+
     color: var(--header-font-color);
+
     margin: 0;
+
     text-align: center;
 
+
+
 }
+
+
+
+
+
 
 
 
 
 /*Person 2 */ 
 
+
+
 .ergebnis_content:nth-child(even) {
+
     flex-direction: row-reverse;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Angebote SECTION*/ 
+
+
+
+
+
+
+
+\#angebote{
+
+
+
+
+
+    padding: 80px 0;
+
+}
+
+
+
+
+
+
+
+/* =====================================
+
+   NOVA PERFORMANCE – ANGEBOTE
+
+\===================================== */
+
+
+
+/* GESAMTER ABSCHNITT */
+
+
+
+\#angebote {
+
+    width: 100%;
+
+    padding: 80px 20px;
+
+    box-sizing: border-box;
+
+}
+
+
+
+/* INHALT */
+
+
+
+.angebote-content {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+
+/* CONTAINER FÜR ALLE DREI KARTEN */
+
+
+
+.angebote-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin-top: 45px;
+
+}
+
+
+
+/* EINZELNE ANGEBOTSKARTE */
+
+
+
+.angebote-container > .offer {
+
+    flex: 0 1 280px;
+
+    width: 280px;
+
+    max-width: 100%;
+
+    min-width: 0;
+
+    min-height: 540px;
+
+    box-sizing: border-box;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    padding: 28px 22px;
+
+
+
+    background-color: #f6f6f6;
+
+    border: 1px solid rgba(0, 0, 0, 0.04);
+
+    border-radius: 14px;
+
+
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+
+
+
+    transition:
+
+        transform 0.3s ease,
+
+        box-shadow 0.3s ease;
+
+}
+
+
+
+/* HOVER */
+
+
+
+.offer:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+
+}
+
+
+
+/* ANGEBOTSNUMMER */
+
+
+
+.angebotsnummer {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    color: var(--header-font-color);
+
+
+
+    text-align: center;
+
+    margin: 0;
+
+}
+
+
+
+/* ÜBERSCHRIFT */
+
+
+
+.angebot-header {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 1.15rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+    color: var(--header-font-color);
+
+
+
+    text-align: center;
+
+    margin: 38px 0 30px;
+
+}
+
+
+
+/* BENEFIT-LISTE */
+
+
+
+.angebot-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+/* EINZELNE BENEFITS */
+
+
+
+.item-angebot {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+
+    color: var(--text-font-color);
+
+}
+
+
+
+/* HÄKCHEN */
+
+
+
+.item-angebot::before {
+
+    content: "✓";
+
+    flex-shrink: 0;
+
+
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    color: var(--header-font-color);
+
+}
+
+
+
+/* BUTTON */
+
+
+
+.angebot-button {
+
+    display: block;
+
+    margin-top: auto;
+
+    padding: 14px 16px;
+
+
+
+    text-align: center;
+
+    text-decoration: none;
+
+
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+
+
+    color: #ffffff;
+
+    background-color: #303843;
+
+
+
+    border-radius: 8px;
+
+
+
+    transition:
+
+        background-color 0.2s ease,
+
+        transform 0.2s ease;
+
+}
+
+
+
+.angebot-button:hover {
+
+    background-color: #495463;
+
+}
+
+
+
+.angebot-button:active {
+
+    transform: scale(0.97);
+
+}
+
+
+
+/* =====================================
+
+   RESPONSIVE DESIGN
+
+\===================================== */
+
+
+
+/* TABLET */
+
+
+
+@media (max-width: 900px) {
+
+
+
+    .angebote-container {
+
+        gap: 20px;
+
+    }
+
+
+
+}
+
+
+
+/* SMARTPHONE */
+
+
+
+@media (max-width: 600px) {
+
+
+
+    #angebote {
+
+        padding: 60px 20px;
+
+    }
+
+
+
+    .angebote-container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+
+    }
+
+
+
+    .angebote-container > .offer {
+
+        flex: none;
+
+        width: 100%;
+
+        max-width: 340px;
+
+        min-height: 540px;
+
+    }
+
+
+
+}
+
+
+
+/* REDUZIERTE ANIMATIONEN */
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+
+    .offer,
+
+    .angebot-button {
+
+        transition: none;
+
+    }
+
+
+
+    .offer:hover,
+
+    .angebot-button:active {
+
+        transform: none;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*====================================================
+
+\=========================== ÜBER UNS */ 
+
+
+
+\#über-uns{
+
+    padding: 80px 0;
+
+    max-width: 1200px;
+
+
+
+}
+
+
+
+
+
+/*.img-container-überuns{
+
+
+
+}*/
+
+
+
+
+
+.member{
+
+    display: block;
+
+    width: 100%;
+
+    height: 520px;
+
+    object-fit: cover;
+
+    border-radius: 8px 8px 0 0;
+
+object-position: 60% 10%; 
+
+margin: 0;
+
+transition: 2s;
+
+}
+
+
+
+
+
+.starter-box{
+
+width: 100%;
+
+height: 120px;
+
+background-color: #161a1d;
+
+margin: 0;
+
+    border-radius: 0px 0px 8px 8px;
+
+}
+
+
+
+
+
+.überuns-header{
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 1.6rem;
+
+    font-weight: 550;
+
+    color: #f6f6f6;
+
+    padding: 15px 20px 0px;
+
+}
+
+
+
+.überuns-text{
+
+padding: 12px 20px;
+
+margin: 0;
+
+line-height: 1.5;
+
+color: #f6f6f6;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.9;
+
+}
+
+
+
+
+
+
+
+/* TRAINER CONTAINER */
+
+
+
+.container-personal {
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    width: 100%;
+
+}
+
+
+
+/* TRAINER BOX */
+
+
+
+.personal {
+
+    width: 350px;
+
+    background-color: #161a1d;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.personal:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+/* TRAINER BILD */
+
+
+
+.personal-img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 420px;
+
+
+
+    object-fit: cover;
+
+    object-position: 50% 20%;
+
+}
+
+
+
+/* TEXT CONTAINER */
+
+
+
+.personal-info {
+
+    padding: 25px;
+
+    text-align: left;
+
+}
+
+
+
+/* NAME */
+
+
+
+.personal-name {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+
+
+    margin: 0 0 8px;
+
+}
+
+
+
+/* POSITION */
+
+
+
+.personal-position {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.9rem;
+
+    color: #b8bec4;
+
+    line-height: 1.5;
+
+
+
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+/* KONTAKTBEREICH */
+
+
+
+\#kontakt {
+
+    padding: 100px 20px;
+
+}
+
+
+
+.kontakt-container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+
+.kontakt-text {
+
+    max-width: 600px;
+
+    line-height: 1.7;
+
+    margin-bottom: 40px;
+
+    color: var(--text-font-color);
+
+}
+
+
+
+/* FORMULAR */
+
+
+
+.kontakt-formular {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+
+
+    max-width: 650px;
+
+    padding: 40px;
+
+
+
+    background-color: #f6f6f6;
+
+    border-radius: 16px;
+
+}
+
+
+
+.kontakt-formular label {
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    color: var(--header-font-color);
+
+}
+
+
+
+.kontakt-formular input,
+
+.kontakt-formular select,
+
+.kontakt-formular textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+
+
+    padding: 14px 16px;
+
+
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 1rem;
+
+
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 8px;
+
+    background-color: #fff;
+
+}
+
+
+
+.kontakt-formular input:focus,
+
+.kontakt-formular select:focus,
+
+.kontakt-formular textarea:focus {
+
+    outline: 2px solid #303843;
+
+    outline-offset: 2px;
+
+}
+
+
+
+.kontakt-formular textarea {
+
+    resize: vertical;
+
+}
+
+
+
+/* BUTTON */
+
+
+
+.kontakt-formular button {
+
+    padding: 16px;
+
+    margin-top: 15px;
+
+
+
+    background-color: #303843;
+
+    color: white;
+
+
+
+    border: none;
+
+    border-radius: 8px;
+
+
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+
+                transform 0.2s ease;
+
+}
+
+
+
+.kontakt-formular button:hover {
+
+    background-color: #495463;
+
+}
+
+
+
+.kontakt-formular button:active {
+
+    transform: scale(0.97);
+
+}
+
+
+
+/* MOBILE */
+
+
+
+@media (max-width: 600px) {
+
+    #kontakt {
+
+        padding: 60px 20px;
+
+    }
+
+
+
+    .kontakt-formular {
+
+        padding: 25px 20px;
+
+    }
+
+}
+
+
+
+
+
+.kontakt-text{
+
+    font-family: "Inter", sans-serif;
+
+    font-size: var(--primary-font-size);
+
+    line-height: 1.2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+.footer {
+
+    background-color: #222b35;
+
+    color: #ffffff;
+
+    padding: 70px 30px 25px;
+
+    font-family: "Inter", sans-serif;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.footer-container {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+
+}
+
+
+
+/* BRAND */
+
+
+
+.footer-brand h2 {
+
+    font-size: 1.6rem;
+
+    margin: 0 0 20px;
+
+}
+
+
+
+.footer-brand p {
+
+    color: #c7d0d9;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+
+    max-width: 350px;
+
+}
+
+
+
+/* NAVIGATION & KONTAKT */
+
+
+
+.footer-navigation,
+
+.footer-kontakt {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+
+.footer-navigation h3,
+
+.footer-kontakt h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 1rem;
+
+}
+
+
+
+.footer a {
+
+    color: #c7d0d9;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.2s ease;
+
+}
+
+
+
+.footer a:hover {
+
+    color: #ffffff;
+
+}
+
+
+
+/* UNTERER BEREICH */
+
+
+
+.footer-bottom {
+
+    max-width: 1200px;
+
+    margin: 60px auto 0;
+
+    padding-top: 25px;
+
+
+
+    border-top: 1px solid #47515b;
+
+
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+
+.footer-bottom p {
+
+    color: #c7d0d9;
+
+    font-size: 0.8rem;
+
+}
+
+
+
+.footer-rechtliches {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 768px) {
+
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
 }

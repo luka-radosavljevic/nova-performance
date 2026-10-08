@@ -1,131 +1,244 @@
 <!DOCTYPE html>
+
 <html lang="de">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NOVA PERFORMANCE</title>
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
+
+
 <body>
+
     <div class="layout"> 
 
-<header>        
-<nav class="navbar"> 
 
-<div class="logo-container">
-<h1 class="logo"><a class="logo-link" href="index.html">NOVA-PERFORMANCE</a></h1>
-</div>
 
-<!-- Navigation Bar -->
-<ul class="nav-links">
-<li class="nav-indicator"></li>
-<li><a id="nav-item" href="#leistungen">Leistungen</a></li>
-<li><a id="nav-item" href="#ergebnisse">Ergebnisse</a></li>
-<li><a id="nav-item" href="#">Angebote</a></li>
-<li><a id="nav-item" href="#">Über uns</a></li>
-<li><a id="nav-item" href="#">Kontakt</a></li>
-<li><a id="nav-item" class="cta-link" href="#">Erstgespräch</a></li>
-</ul>
+<header>
+<nav class="navbar" aria-label="Hauptnavigation">
+    <div class="logo-container">
+        <h1 class="logo"><a class="logo-link" href="index.html">NOVA PERFORMANCE</a></h1>
+    </div>
 
+    <button class="menu-toggle" type="button" aria-label="Menü öffnen"
+            aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a class="nav-item" href="#angebote">Angebote</a></li>
+        <li><a class="nav-item" href="#über-uns">Über uns</a></li>
+        <li class="cta-kontakt"><a id="kontakt-link" href="#kontakt">Kontakt</a></li>
+    </ul>
 </nav>
-
 </header>
+
+
 
 <!-- Hero Section -->
 
 
 
+
+
+
+
 <section class="hero">
+
     <div class="hero-text">
+
         <p class="subtitle">PERSONAL TRAINING · PERFORMANCE COACHING</p>
 
+
+
         <h2 class="hero-title">
+
             MEHR LEISTUNG.<br>
+
             MEHR ENERGIE.<br>
+
             MEHR DU.
+
         </h2>
+
         <p class="hero-text">Bei NOVA PERFORMANCE dreht sich alles um dich und deine persönlichen Ziele.<br> Wir glauben daran, dass erfolgreiches Training kein Zufall ist, sondern das Ergebnis aus Struktur, Wissen und einem durchdachten Konzept. Deshalb setzen wir auf individuelle Trainingsplanung, persönliche Betreuung und nachhaltige Fortschritte – ohne Standardlösungen, sondern mit einem System, das wirklich zu dir passt.</p>
 
+
+
 <div class="hero-image-wrapper">
-        <img class="hero-image" src="../TITLE.jpg" alt="Personal Training">
+
+        <img class="hero-image" src="images/TITLE.jpg" alt="Personal Training">
+
     </div>
+
+
 
 <!-- Erstgespräch--> 
 
+
+
 <h2 class="erstgespräch-head">Starte deine Veränderung noch heute!
+
 </h2>
+
 <!-- Call to Action Button -->
+
  <p class="erstgespräch-text"> 
+
 Du möchtest <span class="highlight-bold">stärker, fitter</span> und <span class="highlight-bold">leistungsfähiger</span> werden?<br> In einem kostenlosen und unverbindlichen Erstgespräch sprechen wir über deine Ziele, deinen aktuellen Trainingsstand und finden heraus, welches Trainingsangebot am besten zu dir passt.
+
 </p>
+
         <div class="cta-btn-container">
-            
+
+
+
         <button type="button" class="cta-btn">
+
                 Kostenloses Erstgespräch
+
     </button>
 
 
 
 
+
+
+
+
+
     </div>
+
     </div>
+
+
 
 </section>
 
 
+
+
+
 <section id="leistungen">
+
     <div class="leistungen-content">
-        <p class="subtitle">02-LEISTUNGEN</p>
+
+        <p class="subtitle">01-LEISTUNGEN</p>
+
+
 
          <h2 class="hero-title-leistungen">
+
             TRAINING, DASS SICH
+
             <br>DEINEM LEBEN
+
             ANPASST.
+
         </h2>
-        
+
+
+
+
 
 <div class="leistungen-grid">
+
     <div class="leistungen-item">
+
         <p class="leistungen-item-number">01</p>
+
         <h3 class="leistungen-item-title">PERSONAL TRAINING</h3>
+
         <p class="leistungen-item-text">Individuelles 1:1 Training, abgestimmt auf deine Ziele, deinen Alltag und dein persönliches Leistungsniveau.</p>
+
         <img class="img-coaching" src="./images/coaching.jpg" alt=""> 
 
+
+
     </div>
 
+
+
     <div class="leistungen-item">
+
         <p class="leistungen-item-number">02</p>
-        <h3 class="leistungen-item-title">PERFORMANCE COACHING</h3>
-        <p class="leistungen-item-text">Ganzheitliche Betreuung für mehr Leistungsfähigkeit, Energie und nachhaltige Fortschritte.</p>
-        <img class="img-performance" src="images/performance.jpg" alt="performance"> 
+
+        <h3 class="leistungen-item-title">ONLINE COACHING</h3>
+
+        <p class="leistungen-item-text">Trainiere flexibel und ortsunabhängig – mit persönlicher Betreuung und einem Konzept, das zu dir passt.</p>
+
+        <img class="img-performance" src="images/online.jpg" alt="performance"> 
+
+
 
     </div>
 
+
+
     <div class="leistungen-item">
+
         <p class="leistungen-item-number">03</p>
+
         <h3 class="leistungen-item-title">TRAININGSPLANUNG</h3>
+
         <p class="leistungen-item-text">Individuelle Trainingspläne, die zu deinen Zielen, deinem Leistungsniveau und deinem Alltag passen.</p>
+
 <img class="img-plan" src="images/trainingsplan.jpg" alt="trainingsplan"> 
 
 
 
+
+
+
+
     </div>
+
 </div>
+
     </div>
+
 </section>
 
 
 
+
+
+
+
 <section id="ergebnisse">
+
     <div class="ergebnisse-content">
-        <p class="subtitle">03-ERGEBNISSE</p>
+
+       <p class="subtitle">02-ERGEBNISSE</p>
+
+
 
          <h2 class="hero-title">
+
             <span class="underline">KEIN</span> STANDARDPLAN.<br>
+
             SONDERN <span class="highlight-bold">DEIN SYSTEM. </span>
+
         </h2>
+
+
+
+
+
+
+
 
 
 
@@ -135,34 +248,72 @@ Du möchtest <span class="highlight-bold">stärker, fitter</span> und <span clas
 <!-- PERSON 1  -->
 
 
+
+
+
 <div class="ergebnis_content">
+
 <div class="ergebnis_bild_container">   
+
 <img class="trainer1" src="images/models/1_model.jpg" alt="Bild von Person 1"> 
+
 </div>
+
     <div class="profil-text-container">
+
 <h3 class="trainer-header"> David Neumann</h3>
+
 <h4 class="trainer-sub-head"> ...seit 2 Jahren im Coaching von NOVA PERFORMANCE</h4>
+
 <p class="trainer-text">
+
 <i>„Ich wollte nicht einfach nur mehr trainieren, sondern das, was ich mache, auch wirklich verstehen. Vorher habe ich vieles nach Gefühl gemacht, ohne genau zu wissen, ob es mich weiterbringt. Bei NOVA Performance hat sich das geändert. Jede Übung hat ihren Sinn, der Aufbau ist durchdacht und ich weiß, woran ich arbeite. Das Training fühlt sich nicht mehr nach Ausprobieren an, sondern nach einem Plan, der wirklich zu mir passt.“</i>
+
 </p>
+
 </div>
+
 </div>
+
+
+
+
 
 
 
 <div class="ergebnis_content">
+
     <!-- Person 2 -->
+
 <div class="ergebnis_bild_container">   
+
 <img class="trainer1" src="images/models/2_model.jpg" alt="Bild von Person 1"> 
+
 </div>
+
     <div class="profil-text-container">
+
 <h3 class="trainer-header"> Julia Winter</h3>
+
 <h4 class="trainer-sub-head"> ...seit 8 Monaten im Coaching von NOVA PERFORMANCE</h4>
+
 <p class="trainer-text">
+
 <i>„Ich hätte anfangs nicht gedacht, wie viel sich in acht Monaten verändern kann. Vor allem, weil ich vorher schon trainiert habe, aber oft ohne richtige Richtung. Mittlerweile merke ich nicht nur körperliche Fortschritte, sondern habe auch ein ganz anderes Verständnis für mein Training entwickelt. Ich weiß, worauf es ankommt, kann meine Leistung besser einschätzen und sehe endlich, dass sich die Arbeit auszahlt. Das motiviert mich jedes Mal aufs Neue.“</i>
+
 </p>
+
 </div>
+
 </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -171,20 +322,617 @@ Du möchtest <span class="highlight-bold">stärker, fitter</span> und <span clas
 
 
 <div class="ergebnis_content">
+
     <!-- Person 3 -->
+
 <div class="ergebnis_bild_container">   
+
 <img class="trainer3" src="images/models/3_model.jpg" alt="Bild von Person 1"> 
+
 </div>
+
     <div class="profil-text-container">
+
 <h3 class="trainer-header"> Emilia Bergmann</h3>
+
 <h4 class="trainer-sub-head"> ...seit 2 Jahren im Coaching von NOVA PERFORMANCE</h4>
+
 <p class="trainer-text">
+
 <i>„Was sich für mich am meisten verändert hat, ist tatsächlich meine Einstellung zum Training. Früher habe ich mich viel zu sehr unter Druck gesetzt und wollte am liebsten alles auf einmal erreichen. Heute gehe ich die Dinge bewusster an und habe gelernt, dass Fortschritt nicht bedeutet, jedes Mal an seine Grenzen gehen zu müssen. Ich bin mittlerweile viel zufriedener mit meiner Entwicklung und freue mich darauf, zu sehen, was noch möglich ist.“</i>
+
 </p>
+
 </div>
+
 </div>
+
 </div> 
+
+
+
+</section>
+
+
+
+
+
+<section id="angebote"> 
+
+
+
+
+
+
+
+<section id="angebote">
+
+
+
+    <div class="angebote-content">
+
+
+
+        <p class="subtitle">03-ANGEBOTE</p>
+
+
+
+        <h2 class="hero-title">
+
+            NICHT IRGENDEIN PLAN.<br>
+
+            <span class="highlight-bold">DEIN PLAN.</span>
+
+        </h2>
+
+
+
+        <div class="angebote-container">
+
+
+
+            <!-- ANGEBOT 01 -->
+
+            <div class="offer">
+
+
+
+                <p class="angebotsnummer">01</p>
+
+
+
+                <h3 class="angebot-header">PERSONAL TRAINING</h3>
+
+
+
+                <ul class="angebot-list">
+
+                    <li class="item-angebot">Individuelle Trainingsplanung</li>
+
+                    <li class="item-angebot">Persönliche 1:1 Betreuung</li>
+
+                    <li class="item-angebot">Technik- und Haltungsoptimierung</li>
+
+                    <li class="item-angebot">Regelmäßige Fortschrittsanalysen</li>
+
+                    <li class="item-angebot">Muskelaufbau & Leistungssteigerung</li>
+
+                    <li class="item-angebot">Flexible Terminvereinbarung</li>
+
+                    <li class="item-angebot">Motivation & Unterstützung</li>
+
+                </ul>
+
+
+
+                <a href="#erstgespraech" class="angebot-button">
+
+                    Jetzt anfragen
+
+                </a>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ANGEBOT 02 -->
+
+            <div class="offer">
+
+
+
+                <p class="angebotsnummer">02</p>
+
+
+
+                <h3 class="angebot-header">ONLINE COACHING</h3>
+
+
+
+                <ul class="angebot-list">
+
+                    <li class="item-angebot">Individueller Trainingsplan</li>
+
+                    <li class="item-angebot">Ortsunabhängige Betreuung</li>
+
+                    <li class="item-angebot">Regelmäßige Trainingsanpassung</li>
+
+                    <li class="item-angebot">Persönlicher Austausch</li>
+
+                    <li class="item-angebot">Fortschrittskontrolle</li>
+
+                    <li class="item-angebot">Flexible Trainingszeiten</li>
+
+                    <li class="item-angebot">Langfristige Unterstützung</li>
+
+                </ul>
+
+
+
+                <a href="#erstgespraech" class="angebot-button">
+
+                    Jetzt anfragen
+
+                </a>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ANGEBOT 03 -->
+
+            <div class="offer">
+
+
+
+                <p class="angebotsnummer">03</p>
+
+
+
+                <h3 class="angebot-header">TRAININGSPLANUNG</h3>
+
+
+
+                <ul class="angebot-list">
+
+                    <li class="item-angebot">Individuelle Zielanalyse</li>
+
+                    <li class="item-angebot">Maßgeschneiderter Trainingsplan</li>
+
+                    <li class="item-angebot">Strukturierter Trainingsaufbau</li>
+
+                    <li class="item-angebot">Anpassung an dein Leistungsniveau</li>
+
+                    <li class="item-angebot">Übungsauswahl nach deinen Zielen</li>
+
+                    <li class="item-angebot">Klare Trainingsstruktur</li>
+
+                    <li class="item-angebot">Alltagstaugliche Planung</li>
+
+                </ul>
+
+
+
+                <a href="#erstgespraech" class="angebot-button">
+
+                    Jetzt anfragen
+
+                </a>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="über-uns">
+
+<p class="subtitle">04-ÜBER UNS</p>
+
+
+
+
+
+<div class="img-container-überuns">
+
+
+
+    <img src="images/team.jpg" alt="Member" class="member">
+
+
+
+   <div class="starter-box"> 
+
+
+
+    <h1 class="überuns-header"> UNTERSCHIEDLICHE MENSCHEN. EINE GEMEINSAME VISION. </h1>
+
+
+
+<p class="überuns-text">
+
+    Wir sind ein Team, das Training nicht dem Zufall überlässt. Mit Erfahrung, Fachwissen und einem klaren Anspruch begleiten wir Menschen dabei, <br> ihre persönlichen Ziele zu erreichen.
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+
+
+
+</div> 
+
+
+
+
+
+<h2 class="hero-title-leistungen">
+
+LERNE UNS KENNEN.        
+
+        </h2>
+
+
+
+
+
+  <div class="container-personal">
+
+
+
+        <!-- TRAINER 1 -->
+
+        <div class="personal">
+
+
+
+            <img src="images/Mike.png"
+
+                 class="personal-img"
+
+                 alt="Mike">
+
+
+
+            <div class="personal-info">
+
+                <h3 class="personal-name">Mike Hartmann</h3>
+
+                <p class="personal-position">
+
+                    Personal Training
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- TRAINER 2 -->
+
+        <div class="personal">
+
+
+
+            <img src="images/leon.jpeg"
+
+                 class="personal-img"
+
+                 alt="Leon">
+
+
+
+            <div class="personal-info">
+
+                <h3 class="personal-name">Leon Becker</h3>
+
+                <p class="personal-position">
+
+                    Strength & Conditioning
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- TRAINER 3 -->
+
+        <div class="personal">
+
+
+
+            <img src="images/sarah.jpeg"
+
+                 class="personal-img"
+
+                 alt="Sarah">
+
+
+
+            <div class="personal-info">
+
+                <h3 class="personal-name">Sarah Neumann</h3>
+
+                <p class="personal-position">
+
+                    Functional Training
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+<section id="kontakt">
+
+  <div class="kontakt-container">
+
+
+
+    <p class="subtitle">05 – KONTAKT</p>
+
+
+
+    <h2 class="hero-title">
+
+      DEIN NÄCHSTER SCHRITT<br>
+
+      <span class="highlight-bold">BEGINNT HIER.</span>
+
+    </h2>
+
+
+
+    <p class="kontakt-text">
+
+      Du hast Fragen zu unserem Coaching oder möchtest
+
+      direkt loslegen? Schreib uns und wir melden uns bei dir.
+
+    </p>
+
+
+
+    <form class="kontakt-formular">
+
+
+
+      <label for="name">Dein Name</label>
+
+      <input type="text" id="name" name="name"
+
+             placeholder="Vor- und Nachname" required>
+
+
+
+      <label for="email">Deine E-Mail-Adresse</label>
+
+      <input type="email" id="email" name="email"
+
+             placeholder="name\@beispiel.de" required>
+
+
+
+      <label for="angebot">Dein Interesse</label>
+
+      <select id="angebot" name="angebot" required>
+
+        <option value="">Bitte auswählen</option>
+
+        <option value="personal">Personal Training</option>
+
+        <option value="online">Online Coaching</option>
+
+        <option value="training">Trainingsplanung</option>
+
+        <option value="training">Jobs</option>
+
+        <option value="training">Sonstiges</option>
+
+
+
+
+
+      </select>
+
+
+
+      <label for="nachricht">Deine Nachricht</label>
+
+      <textarea id="nachricht" name="nachricht"
+
+                rows="5"
+
+                placeholder="Erzähl uns mehr..."
+
+                required></textarea>
+
+
+
+      <button type="submit">Nachricht senden →</button>
+
+
+
+    </form>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+
+ <div class="footer-container">
+
+
+
+        <div class="footer-brand">
+
+            <h2>NOVA PERFORMANCE</h2>
+
+            <p>DEIN POTENZIAL. UNSER ANSPRUCH.</p>
+
+            <p>
+
+                Individuelles Coaching. Klare Strukturen.
+
+                Nachhaltiger Fortschritt.
+
+            </p>
+
+        </div>
+
+
+
+        <nav class="footer-navigation" aria-label="Footer-Navigation">
+
+            <h3>Navigation</h3>
+
+
+
+            <a href="index.html">Startseite</a>
+
+            <a href="index.html#leistungen">Leistungen</a>
+
+            <a href="index.html#ergebnisse">Ergebnisse</a>
+
+            <a href="ueber-uns.html">Über uns</a>
+
+            <a href="#kontakt">Kontakt</a>
+
+        </nav>
+
+
+
+        <div class="footer-kontakt">
+
+            <h3>Kontakt</h3>
+
+
+
+            <a href="#kontakt">Kontaktformular</a>
+
+            <a href="#">Instagram</a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 NOVA PERFORMANCE</p>
+
+
+
+        <div class="footer-rechtliches">
+
+            <a href="impressum.html">Impressum</a>
+
+            <a href="datenschutz.html">Datenschutz</a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
 
@@ -222,8 +970,102 @@ Du möchtest <span class="highlight-bold">stärker, fitter</span> und <span clas
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+<script src="script.js"></script>
 </body>
+
+
 
 </html>
